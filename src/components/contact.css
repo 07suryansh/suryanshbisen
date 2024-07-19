@@ -1,0 +1,102 @@
+.contact-container{
+    display: flex;
+    flex-direction: row;
+    height: 88vh;
+
+}
+.contact-left-container{
+    width: 50%;
+    margin-top: 100px;
+}
+.contact-right-container{
+    width: 50%;
+    margin-top: 100px;
+}
+.contact-card{
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px;
+    width: 70%;
+    /* background-color: #F4ECE6; */
+    border: 1px solid #dadada;
+    border-radius: 20px;
+    gap: 10px;
+    /* box-shadow: 0 0 50px rgba(0, 0, 0, 0.2); */
+}
+input{
+    text-decoration: none;
+    margin: 4px;
+    font-family: "poppins";
+    padding: 8px 14px;
+    width: 90%;
+    border-radius: 10px;
+    border: 1px solid #dadada;
+}
+.message{
+    height: 180px;
+    text-align:start;
+}
+.slogo{
+    width: 50%;
+    margin: auto;
+    margin-top: 100px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.slogo:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}
+
+/* mobile screen */
+
+@media only screen and (max-width: 600px){
+    .contact-container{
+        display: flex;
+        flex-direction: row;
+        height: 88vh;
+    }
+    .contact-left-container{
+        display: none;
+        /* visibility: hidden; */
+    }
+    .contact-right-container{
+        align-self: center;
+        width: 100%;
+        margin-top: -60px;
+        margin-bottom: -100px;
+    }
+    .contact-card{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        margin-top: 0px;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        /* border: 1px solid #dadada; */
+        border: none;
+        border-radius: 20px;
+        background-color: #f4f4f4;
+    }
+    input{
+        text-decoration: none;
+        margin: 4px;
+        font-family: "poppins";
+        padding: 8px 14px;
+        width: 90%;
+        /* border: 1px solid #dadada; */
+        border: none;
+        border-radius: 20px;
+    }
+    .message{
+        height: 180px;
+        text-align:start;
+    }
+    .slogo{
+        display: none;
+    }
+}

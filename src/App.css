@@ -1,0 +1,26 @@
+.App {
+  text-align: center;
+}
+
+.content {
+  padding-top: 100px; /* Ensure content does not overlap the fixed navbar */
+}
+
+::selection {
+  background: #000000; /* Background color of the selection */
+  color: #fff; /* Text color of the selection */
+}
+
+/* For webkit browsers */
+::-webkit-selection {
+  background: #000000; /* Background color of the selection */
+  color: #fff; /* Text color of the selection */
+}
+
+
+/* Footer.css */
+
+
+/* Add additional styling as needed */
+
+

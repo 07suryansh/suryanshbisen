@@ -1,0 +1,396 @@
+*{
+  box-sizing: border-box;
+  transition: ease-out 0.5s;
+  margin: 0;
+}
+body {
+  margin: 0;
+  transition: ease-out 0.5s;
+}
+
+
+  .nav-icon {
+    width: 16px;
+    height: 16px;
+    margin: 8px;
+    background-color: rgb(94, 19, 233);
+  }
+  
+  /* Navbar.css */
+  
+  .navbar {
+    display: flex;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    justify-content: space-between;
+    padding: 30px 20px;
+    background-color: #fff; /* Adjust the background color as needed */
+    color: #000; /* Adjust the text color as needed */
+    z-index: 1;
+  }
+
+  .navbar-text {
+    font-size: 24px;
+    transition: font-size 0.3s ease, opacity 0.3s ease;
+    font-weight:500;
+    color: #3572EF; 
+    user-select: none;
+    cursor: pointer;
+}
+
+
+  
+  
+  .nav-left-section {
+    display: flex;
+    align-items: center;
+    margin: auto 20px;
+  }
+  
+  .nav-right-section {
+    display: flex;
+    align-items: center;
+    
+  }
+
+  .nav-right-section a {
+    color: #000; /* Adjust the text color as needed */
+    text-decoration: none;
+    width: auto;
+    user-select: none;
+    /* font-weight: 300; */
+    /* margin-right: 15px; */
+  }
+  .active {
+    font-weight: 600;
+    color: #3572EF !important;
+    /* font-weight: 500; */
+  }
+  
+  /* Add the following styles to align content */
+  .nav-left-section {
+    justify-content: flex-start;
+    width: 60%;
+  }
+  
+  .nav-right-section {
+    justify-content: space-evenly;
+    margin-right: 40px;
+    width: 40%;
+    margin: auto 50px;
+    padding: 0;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  
+  
+  a {
+    transition: transform 0.3s; 
+  }
+  
+  a:hover {
+    transform: scale(1.1); 
+  }
+  
+  a:not(:hover) {
+    transition: transform 0.3s; 
+  }
+  
+  a:not(:hover):hover ~ a {
+    transform: translateX(10px); 
+  }
+
+
+  
+
+
+  @media only screen and (max-width: 600px) {
+   
+    .active {
+      font-weight: 500;
+      color: #ffffff !important;
+      background-color: #2F3645;
+      padding:6px 18px;
+      border-radius: 100px;
+      transition: ease-out 0.5s;
+      margin: 0px 0px;
+    }
+  
+    .nav-icon {
+      width: 6px;
+      height: 6px;
+      margin: 2px;
+      margin-left: 12px;
+      margin-right: 8px;
+      background-color: #3572EF;
+    }
+    
+    /* Navbar.css */
+    
+    .navbar{
+      display: flex;
+      position: fixed;
+      left: 0;
+      top: 0;
+      height: 90px;
+      width: 100%;
+      /* justify-content: space-between; */
+      color: #000; /* Adjust the text color as needed */
+      z-index: 2;
+      padding: 0px;
+    }
+    
+    
+    .nav-left-section {
+      display: flex;
+      align-items: center;
+      margin: 0;
+      justify-content: center;
+      width: 100%;
+    }
+    
+    .nav-right-section {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin: 0;
+      transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+    }
+    
+    
+    
+    .nav-right-section a {
+      color: #000; /* Adjust the text color as needed */
+      text-decoration: none;
+      width: auto;
+      user-select: none;
+      /* margin-right: 15px; */
+    }
+
+
+    a:hover{
+      /* color: #3572EF; */
+      font-weight: 500;
+      transition: ease-out 0.5s;
+    }
+    
+    a {
+      transition: transform 0.3s; 
+    }
+    
+    a:hover {
+      transform: scale(1.0); 
+      transition: ease-out 0.5s;
+    }
+    
+    a:not(:hover) {
+      transition: transform 0.3s; 
+    }
+  
+    a:not(:hover):hover ~ a {
+      transform: translateX(0px);     
+      transition: ease-out 0.5s;
+    } 
+
+
+
+
+
+
+    .burger-menu{
+      height: auto;
+      width: 4em;
+      background-color: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      cursor: pointer;
+      padding: auto;
+      margin: auto;
+      gap: 7px;
+    }
+    .burger-bar{
+      width: 2.5em;
+      height: 0.35em;
+      /* background-color: #3572EF; */
+      border-radius: 0.5em;
+    }
+
+    .burger-bar:nth-child(1){
+      width: 1.20em;
+      align-self: flex-start;
+      margin-left: 17px;
+    }
+    .burger-bar:nth-child(2){
+      width: 2.5em;
+      align-self: center;
+    }
+    .burger-bar:nth-child(3){
+      width: 1.20em;
+      align-self: flex-end;
+      margin-right: 17px;
+    }
+  
+    .nav-right-section{
+      width: 95%;
+      height: 60px;
+      position: fixed;
+      /* margin-top: 40px; */
+      background-color: #ffffff;
+      opacity: 1;
+      z-index: -1;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      /* gap: 16px; */
+      transition: ease-out 0.5s;
+      bottom: 10px;
+      padding: 0px 10px;
+      margin: auto;
+      margin-bottom: 5px;
+      left: 0;
+      right: 0;
+      border-radius: 100px;
+      opacity: 1;
+      box-shadow: 0 -10px 24px rgba(0, 0, 0, 0.2),
+                  0 10px 24px rgba(0, 0, 0, 0.2);
+    }
+  
+    /* .hidden{
+      display: none;
+    }
+  
+    .visible{
+      display: inherit;
+    } */
+
+    .burger-bar.clicked:nth-child(1){
+        transform: rotate(45deg) translate(0.35em,0.3em);
+        transition: ease-out 0.3s;
+        transition: cubic-bezier(0.375, 0.750, 0.275, 1.450) 0.3s;
+        width: 1.25em;
+        background-color: #374151;
+    }
+    .burger-bar.clicked:nth-child(2){
+      transform: rotate(-45deg);
+      transition: ease-out 0.3s;
+      width: 2.2em;
+      transition: cubic-bezier(0.375, 0.750, 0.275, 1.450) 0.3s;
+      background-color: #374151;
+  }
+    .burger-bar.clicked:nth-child(3){
+      transform: rotate(45deg) translate(-0.35em,-0.3em);
+      transition: ease-out 0.3s;
+      transition: cubic-bezier(0.375, 0.750, 0.275, 1.450) 0.3s;
+      /* transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s; */
+      width: 1.25em;
+      background-color: #374151;
+    }
+    .burger-bar.unclicked{
+      transform: rotate(0) translate(0);
+      transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
+    }
+    .links{
+      padding:6px 18px;
+      border-radius: 100px;
+      position: relative;
+    }
+    .nav-shadow{
+      position: absolute;
+      height: 36px;
+      width: auto;
+      top: 0;
+      z-index: -2;
+      background-color: #e0e0e0;
+      border-radius: 100px;
+      display: flex;
+      margin: 12px 8px;
+    }
+
+
+    /* .links:nth-child(1):hover ~ .nav-shadow {
+      width: 80px;
+      left: 6px;
+    }
+    
+    .links:nth-child(2):hover ~ .nav-shadow {
+      width: 100px;
+      left: 90px;
+    }
+    
+    .links:nth-child(3):hover ~ .nav-shadow {
+      width: 85px;
+      left: 186px;
+    }
+    
+    .links:nth-child(4):hover ~ .nav-shadow {
+      width: 105px;
+      left: 266px;
+    } */
+
+    /* .nav-right-section:hover .nav-shadow.default {
+      width: 100px;
+      left: 0;
+    } */
+    
+    /* Show the shadow when hovered over links */
+    /* .links:active ~ .nav-shadow {
+      display: flex;
+    } */
+
+
+
+
+    /* .nav-right-section .nav-shadow,.links:nth-child(1):active~.nav-shadow{
+      width: 80px;
+      left: 6px;
+      border-radius: 100px;
+      transition: ease-out 0.3s;
+    }
+    .nav-right-section .nav-shadow,.links:nth-child(2):active~.nav-shadow{
+      width: 100px;
+      left: 90px;
+      border-radius: 100px;
+      transition: ease-out 0.3s;
+    }
+    .nav-right-section .nav-shadow,.links:nth-child(3):active~.nav-shadow{
+      width: 85px;
+      left: 186px;
+      border-radius: 100px;
+      transition: ease-out 0.3s;
+    }
+    .nav-right-section .nav-shadow,.links:nth-child(4):active~.nav-shadow{
+      width: 105px;
+      left: 266px;
+      border-radius: 100px;
+      transition: ease-out 0.3s;
+    } */
+
+    /* .nav-right-section .nav-shadow.default {
+      width: 100px;
+      left: 0;
+    }
+     */
+     .links.active + .nav-shadow {
+      display: flex;
+    }
+    
+    /* Ensure default behavior when no link is clicked */
+    .nav-right-section:hover .nav-shadow.default {
+      width: 100px;
+      left: 0;
+    }
+    
+    /* Default shadow position */
+    .nav-right-section .nav-shadow.default {
+      width: 100px;
+      left: 0;
+    }
+    
+  }
+
+  

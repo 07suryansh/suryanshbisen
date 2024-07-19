@@ -1,0 +1,129 @@
+.about-container{
+    /* background-color: #F4ECE6; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 40px;
+}
+.about-heading{
+    padding-top: 50px;
+    padding-bottom: 10px;
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.nav-icon {
+    width: 16px;
+    height: 16px;
+    background-color: blueviolet;
+}
+.about{
+    font-weight: 700;
+    font-size: 25px;
+    color: #374151;
+}
+.about-box{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 30px 40px;
+    width: 80%;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: start; */
+    align-items: flex-start;
+    gap: 5px;
+    border: 1px solid #dadada;
+    border-radius: 20px;
+    /* background-color: #f4f4f4;
+    border:none; */
+    color: #374151;
+    font-weight: 700;
+}
+.institute-name{
+    font-weight: 700;
+    font-size: larger;
+    color: #374151;
+}
+.study-period{
+    font-weight: 400;
+    font-size: 15px;
+}
+.study-stream{
+    color: #374151;
+    padding: 0px 0px;
+    font-weight: 400;
+    font-size: 15px;
+}
+.grade{
+    font-weight: 700;
+    font-size: 15px;
+    color: #374151;
+}
+
+/* mobile screen */
+
+@media only screen and (max-width: 600px){
+    .about-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 60px;
+        margin-bottom: 0px;
+    }
+    .about-heading{
+        padding-top: 20px;
+        padding-bottom: 10px;
+        /* background-color: aquamarine; */
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-icon {
+        width: 16px;
+        height: 16px;
+        background-color: blueviolet;
+    }
+    .about{
+        font-weight: 700;
+        font-size: 25px;
+        /* color: #374151; */
+    }
+    .about-box{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-color: white;
+        padding: 20px 20px;
+        width: 90%;
+        height: 20%;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: start; */
+        align-items: flex-start;
+        background-color: #f4f4f4;
+        border:none;
+    }
+    .institute-name{
+        /* color: blueviolet; */
+        font-weight: 700;
+        font-size:20px;
+    }
+    .study-period{
+        font-weight: 400;
+    }
+    .study-stream{
+        color: #374151;
+        padding: 0px 0px;
+        font-weight: 400;
+        margin: 2px -2px;
+    }
+    .grade{
+        font-weight: 700;
+        color: #374151;
+    }
+}
