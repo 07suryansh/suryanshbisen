@@ -1,7 +1,7 @@
 
 body {
   margin: 0;
-  font-family: 'poppins',-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Inter','poppins',-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -16,7 +16,7 @@ code {
     monospace;
 }
 *{
-  font-family:'poppins';
+  font-family:'inter','poppins';
 }
 
 
