@@ -24,7 +24,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <p className="copyright">&copy; 2024 Suryansh Singh Bisen</p>
+      <p className="copyright">&copy; 2025 Suryansh Singh Bisen</p>
     </footer>
   );
 }
