@@ -17,7 +17,7 @@ export default function Projects() {
     })
     
   },[]);
-  console.log(projects);
+  // console.log(projects);
   return (
     <>
       <div>
