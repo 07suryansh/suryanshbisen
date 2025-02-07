@@ -24,10 +24,10 @@ export default function Projects() {
         <div className="projects-container">
           <div className="projects-heading">
           </div>
-          {projects?.map((val,key)=>(<ProjectCard
+          {projects.map((val,key)=>(<ProjectCard
             key={key}
             heading={val.title}
-            tech={val?.techs?.map((e, index) => (
+            tech={val.techs.map((e, index) => (
               <div
                 key={index}
                 className="tech-bar"
