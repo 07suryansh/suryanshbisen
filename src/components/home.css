@@ -165,12 +165,13 @@
     line-height: 1.8;
     text-align: start;
     font-weight: 400;
-    background-color: #f0f0f0;
+    /* background-color: #f0f0f0; */
     padding: 20px 40px;
     margin-left: 40px;
     margin-right: 40px;
     margin-top: 10px;
-    border-radius: 100px;
+    border-radius: 20px;
+    border: 1px solid #e0e0e0;
 }
 
 .flag{
